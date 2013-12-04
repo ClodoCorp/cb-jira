@@ -44,5 +44,5 @@ end
 include_recipe "jira"
 
 ruby_block "remove_recipe_jira_upgrade" do
-  block { node.run_list.remove("recipe[jira::upgrade]") }
+  block { node.run_list.remove("recipe[atlassian-jira::upgrade]") }
 end
